@@ -1,0 +1,233 @@
+.tax-deduction__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.tax-deduction__desc {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+    white-space: pre-line;
+}
+
+.tax-deduction__subtitle, .tax-deduction__label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tax-deduction__label {
+    position: relative;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.tax-deduction__label-inner {
+    margin: 0 0 8px 0;
+}
+
+.tax-deduction__label--error input[type="text"] {
+    border-color: #EA0029;
+}
+
+.tax-deduction__label--error input[type="text"]::placeholder {
+    color: #FFFFFF;
+}
+
+.tax-deduction__label--error::after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: "Поле обязательно для заполнения";
+    color: #EA0029;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.tax-deduction__cost {
+    width: 100%;
+    height: 40px;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border: 1px solid #DFE3E6;
+    border-radius: 3px;
+    font-family: "Lab Grotesque", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.tax-deduction__cost:focus {
+    border: 1px solid #DFE3E6;
+    outline: none;
+}
+
+.tax-deduction__cost:disabled {
+    border: 1px solid #808080;
+}
+
+.tax-deduction__cost:disabled:hover {
+    border: 1px solid #808080;
+}
+
+.tax-deduction__cost::placeholder {
+    font-family: "Lab Grotesque", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #BEC5CC;
+}
+
+.tax-deduction__cost:disabled::placeholder {
+    color: #808080;
+}
+
+.tax-deduction__cost:hover {
+    border: 1px solid #000000;
+}
+
+.tax-deduction__wrap {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tax-deduction__cost-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #EA0029;
+    font-family: "Lab Grotesque", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tax-deduction__cost-btn:hover {
+    cursor: pointer;
+    color: #F53A31;
+}
+
+.tax-deduction__cost-btn:active {
+    color: #EA0029;
+}
+
+.tax-deduction__subtitle {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tax-deduction__tags {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.tax-deduction__tags-title {
+    margin: 0 44px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.tax-deduction__radio-label {
+    margin-right: 16px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #EEF0F2;
+    cursor: pointer;
+}
+
+.tax-deduction__radio-label:hover {
+    background-color: #DFE3E6;
+}
+
+.tax-deduction__radio-label:active {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    color: #FFFFFF;
+}
+
+.tax-deduction__radio:checked + .tax-deduction__radio-label {
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    color: #FFFFFF;
+}
+
+.tax-deduction__add-btn {
+    width: 100%;
+    padding: 16px 0;
+    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.tax-deduction__add-btn:hover,
+.tax-deduction__add-btn:active {
+    background-color: #EA0029;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+}
+
+.tax-deduction__add-btn:disabled {
+    background-color: #BEC5CC;
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .tax-deduction__title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .tax-deduction__tags {
+        flex-wrap: wrap;
+    }
+
+    .tax-deduction__tags-title {
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+
+    .tax-deduction__desc {
+        margin-bottom: 25px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .tax-deduction__label {
+        margin-bottom: 0;
+    }
+
+    .tax-deduction__radio-label {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .tax-deduction__label {
+        margin-bottom: 0;
+    }
+
+    .tax-deduction__tags {
+        margin-top: 24px;
+    }
+
+    .tax-deduction__tags-title {
+        margin-right: 33px;
+    }
+}
